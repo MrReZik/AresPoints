@@ -1,0 +1,18 @@
+name: AresPoints
+version: '${version}'
+main: com.mrrezik.aresPoints.AresPoints
+api-version: 1.21
+depend: [PlayerPoints]
+authors: [mrrezik]
+
+commands:
+  arespoints:
+    description: Главная команда плагина
+    usage: /arespoints <setplayer|remplayer|reload> <nick>
+    permission: arespoints.admin
+    aliases: [ap]
+
+permissions:
+  arespoints.admin:
+    description: Полный доступ к управлению AresPoints
+    default: op
